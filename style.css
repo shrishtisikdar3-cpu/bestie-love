@@ -1,0 +1,253 @@
+/* 🌸 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🌈 Background gradient */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #f8cdda,  /* pink */
+    #d4c1ec,  /* purple */
+    #fff1c1   /* beige */
+  );
+  color: #5a2a55;
+}
+
+/* 🌸 Hero Section */
+.hero {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  animation: fadeIn 3s ease;
+}
+
+.scroll-text {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  animation: float 2s infinite ease-in-out;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+/* 🧸 About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  animation: popUp 1s ease forwards;
+}
+
+/* 💫 Card animation */
+@keyframes popUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 💐 Beauty Paragraph */
+.beauty-para {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 25px;
+  border-radius: 22px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  animation: fadeIn 2s ease;
+}
+/* 🕰️ Timeline Section */
+.timeline {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.timeline h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.event {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  animation: fadeIn 1.5s ease;
+}
+
+.event span {
+  font-size: 1.5rem;
+}
+
+.event p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* 🖼️ Gallery Section */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.photos img:active {
+  transform: scale(1.08);
+}
+/* 💌 Final Love Section */
+.final-love {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.final-text {
+  background: rgba(255,255,255,0.6);
+  padding: 25px;
+  border-radius: 22px;
+  font-size: 1rem;
+  line-height: 1.8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.heart-btn {
+  margin-top: 30px;
+  padding: 14px 26px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: #ff6f91;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: float 2s infinite;
+}
+
+.tap-msg {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+/* 🎵 Music Button */
+.music-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#musicBtn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: #cdb4db;
+  color: #4a245e;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.sparkles span {
+  position: fixed;
+  bottom: -20px;
+  font-size: 18px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
